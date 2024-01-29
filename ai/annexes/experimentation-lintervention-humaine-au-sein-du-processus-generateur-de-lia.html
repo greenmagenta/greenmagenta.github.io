@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Pour une IA créatrice : L'IA dans le contexte de la création artistique</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+  <link rel="icon" type="image/png" href="../favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique&family=Work+Sans:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    @media screen and (max-width: 1550px) and (min-width: 1250px){
+      .page-content {
+          padding-left: 0 !important;
+          padding-right: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="page-content nav">
+    <h3 class="title" style="margin: 0 auto">Expérimentation : L'intervention humaine au sein du processus générateur de l'IA</h3>
+  </main>
+
+  <main class="page-content" style="background-color: #522a22; color: white; border-bottom: 2px solid white; padding: 32px;">
+    <p class="title" style="margin: 0 auto"><a href="../index.html" style="color: white; border-color: white;">Accueil</a> · Annexes</p>
+  </main>
+  <main class="page-content annexe-title" style="background-color: #522a22; color: white;">
+    <h1 class="title">Expérimentation : L'intervention humaine au sein du processus générateur de l'IA</h1>
+  </main>
+
+  <main class="page-content">
+    <section>
+      <p>
+        À l'heure où l’intelligence artificielle s'inscrit progressivement dans les domaines créatifs et artistiques, longtemps réservés à l’humain, l'émergence des contenus générés artificiellement tend à soulever de nouvelles questions concernant la place de l’Homme et le rapport de la machine à la création artistique. Pour mieux comprendre la relation qui lie l'artiste à la machine, j'ai mené une série d'expérimentations exploratoires visant à déterminer la mesure selon laquelle l'intervention humaine affecte le caractère au premier abord déterminé et déterminable du résultat de l'IA.<br><br>
+        Dans un premier temps, je me suis attaché à simplement générer des visuels à l'aide d'un réseau de neurones de type GAN (réseau antagoniste génératif) sans intervenir sur le modèle, entraîné avec des milliers photographies de paysages montagneux. Le résultat (<a href="#fig-1">fig. 1</a>) est alors celui parfaitement attendu, dépeignant une montagne, et ce avec peu d’aberrations visuelles. En l'état, l'algorithme semble avoir reproduit de manière imitative les paysages avec lesquels il a été entraîné.        
+      </p>
+      <div class="footer-note">
+        <p id="fig-1"><img src="../img/1.jpeg" class="column zoom color" alt=""></p>
+        <p>Fig. 1 : Génération automatique sans intervention humaine.<br>Dataset : Alpes</p>
+        </div>
+    </section>
+  </main>
+
+  <main id="fig-2-3" class="page-content" style="background-color: rgba(82, 42, 34, 0.05);">
+    <section style="margin-top: 24px;">
+      <p><img src="../img/Group 51.png" class="column color zoom" alt=""></p>
+      <div class="footer-note">
+        <p>Fig. 2 (à gauche) : Intervention légère sur les images d'entrée.<br>Dataset : Alpes, Rivage, Vallée, Promontoire</p>
+        <p>Fig. 3 (à droite) : Intervention légère sur les images d'entrée et les paramètres de génération.<br>Dataset : Alpes, Rivage, Vallée, Promontoire</p>
+      </div>
+    </section>
+  </main>
+
+  <main class="page-content">
+    <section>
+      <p>En intervenant légèrement sur le processus génératif, on assiste aux premières transformations. Tout d'abord, j'ai tenté de modifier le jeu de données avec lequel le modèle fût entraîné en ajoutant à mon tour de nouvelles images, différentes bien qu'en lien avec les paysages. En plus des montagnes, on trouve alors des images de vallées, promontoires et rivages. Les résultats semblent alors réagir par addition, effectuant alors une synthèse cumulative des différentes caractéristiques au sein du même visuel (<a href="#fig-2-3">fig. 2</a>). Cette réaction reste alors de l'ordre du prédictible chez l'initié. Néanmoins, par la suite, en intervenant légèrement sur les paramètres et la configuration de l'algorithme dans sa manière de traiter et de recomposer les images (l'espace latent), les premières aberrations visuelles se font constater. Le modèle, déréglé, semble alors chercher à recombiner au sein du résultat (<a href="#fig-2-3">fig. 3</a>) les différentes caractéristiques de manière imprécise, laissant machine dans une position proche de l'échec malgré des éléments toujours perceptibles et distinguables.</p>
+    </section>
+  </main>
+
+  <main id="fig-4-5" class="page-content" style="background-color: rgba(82, 42, 34, 0.05);">
+    <section style="margin-top: 24px;">
+      <p><img src="../img/Group 50.png" class="column color zoom" alt=""></p>
+      <div class="footer-note">
+        <p>Fig. 4 (à gauche) : Intervention sévère sur les images d'entrée.<br>Dataset : Alpes, Réfrigérateur, Ventilateur, Volcan, Lynx, Église</p>
+        <p>Fig. 5 (à droite) : Intervention sévère sur les images d'entrée et les paramètres de génération.<br>Dataset : Alpes, Réfrigérateur, Ventilateur, Volcan, Tortue, Corail</p>
+      </div>
+    </section>
+  </main>
+
+  <main class="page-content">
+    <section>
+      <p>Afin de pousser l'algorithme dans ses retranchements, j'ai cherché à reproduire le même procédé en gagnant en sévérité dans la démarche. Pour commencer, j'ai modifié le jeu de données du modèle avec de nouvelles images à l'opposé de la thématique du paysage, intégrant des ensemble photographiques de ventilateurs, réfrigérateurs ou encore d'églises. Le constat est immédiat ; l'addition de toutes ces caractéristiques provoque des visuels surprenants, le résultat (<a href="#fig-4-5">fig. 4</a>) devenant l'expression abstraite de l'échec du programme dans sa démarche de génération marquée par la volonté de celui qui en est à l'origine. En modifiant les paramètres de traitement d'image du modèle, ce dernier atteint un degré d'abstraction où plus aucune des caractéristiques du modèle ne transparaissent dans le visuel généré (<a href="#fig-4-5">fig. 5</a>). Ainsi, l'algorithme d'IA devient imprédictible dans ses résultats du fait de l'intervention humaine sur son processus.</p>
+    </section>
+    <section>
+      <p>Ces nouvelles images, marquées par l'indétermination de la machine déréglée et poussée à fonctionner de manière irrégulière, pourraient alors peut-être être considérées comme la production commune née de la mise en commun des capacités de l'IA et de l'humain.</p>
+    </section>
+  </main>
+
+  <main class="page-content" style="background-color: #522a22; color: white;">
+    <section>
+      <ul>
+        <li><a href="../index.html" style="color: white; border-color: white;">Retour à l'accueil</a></li>
+      </ul>
+    </section>
+  </main>
+
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.js"></script>
+<script type="text/javascript" src="../js/zooming.min.js"></script>
+<!--<script type="text/javascript" src="../js/script.js"></script>-->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+	new Zooming({
+		// options...
+	}).listen('img.zoom')
+})
+
+var annexe_title = document.getElementsByClassName("annexe-title")[0]
+var annexe_nav = document.getElementsByClassName("nav")[0]
+
+window.onscroll = function() {
+  if (annexe_title !== null) {
+      if(checkVisible(annexe_title)){
+        annexe_nav.classList.remove("is-displayed");
+      } else {
+        annexe_nav.classList.add("is-displayed");
+      }
+    }
+}
+function checkVisible(elm) {
+	var rect = elm.getBoundingClientRect();
+	var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+	return !(rect.bottom < 0 || rect.top - viewHeight >= -5);
+}
+</script>
+</body>
+</html>

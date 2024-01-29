@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Pour une IA créatrice : L'IA dans le contexte de la création artistique</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique&family=Work+Sans:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+
+  <div class="cover" id="cover">
+    <div class="top-content">
+      <div class="rotate-1"><h1>Pour</h1></div><div class="rotate-2"><h1>une</h1></div><div class="rotate-3"><h1>IA</h1></div><div class="rotate-1"><h1>créatrice</h1></div>
+    </div>
+    <div class="bottom-content">
+      <h3>Pour une IA créatrice :<br>
+        <i>L'IA dans le contexte de la création artistique</i>
+      </h3>
+      <h3>Regis Brasme, 2021</h3>
+
+      <a href="abstract.html" id="alt-action" style="top: 64px; color: white; border-color: white" class="label">Abstract</a>
+    </div>
+    <div style="/*filter: invert(33%) sepia(55%) saturate(4188%) hue-rotate(1deg) brightness(101%) contrast(104%);*/ position: absolute; top: 0; bottom: 0; width: 100%; left:0; right: 0; pointer-events: none; overflow: hidden;">
+      <img src="img/ia_gen.gif" alt="" style="-webkit-filter: grayscale(100%); filter: grayscale(100%); height: 100%; width: auto; right: 0; top: 0; position: absolute; opacity: 0.5; mix-blend-mode: multiply;">
+    </div>
+    <div class="bottom-note">
+      <p>Remerciements</p>
+      <p>Au crépuscule de trois années riches en apprentissages et en découvertes qui m’ont permis d’appréhender différemment le monde du design, je tiens sincèrement à remercier mes professeurs avec qui j’ai pu évoluer et me développer dans ma pratique. Un grand merci à eux pour leur disponibilité, leurs conseils et toute l’expérience qu’ils ont pu nous partager. Merci tout particulièrement à mon tuteur Kevin Vennitti et ma professeure Valentine Reynaud pour m’avoir accompagné dans mes réflexions et apporté un recul indispensable.</p>
+      <p>Merci à ma famille pour leur soutiens inconditionnel, leur attention particulière et leur aide. Merci également à mes amis qui m’ont fait grandir et su dissiper mes incertitudes dans les périodes de doutes.</p>
+      <p>+ Pôle Supérieur de Design, Lycée Léonard de Vinci<br>+ Promotion 2021-2022</p>
+    </div>
+    <div class="top-actions">
+      <a href="abstract.html" class="label">Abstract</a>
+      <!--
+      <a href="#" class="label">Lexique</a>
+      <a href="#annexes" class="label">Annexes</a>
+      -->
+    </div>
+  </div>
+
+  <div class="resume">
+    <div class="content">
+      <p><a href="#introduction" id="resume-introduction">Introduction</a></p>
+      <p><a href="#1-A" id="resume-1">I. Un simple outil créatif d'ordre mécanique ?</a></p>
+      <div style="margin-left: 16px">
+        <p><a href="#1-A" id="resume-1-a">A. Une forme de créativité combinatoire</a></p>
+        <p><a href="#1-B" id="resume-1-b">B. Aux limites de la création authentique</a></p>
+      </div>
+      <p><a href="#2-A" id="resume-2">II. Vers une IA véritablement créatrice ?</a></p>
+      <div style="margin-left: 16px">
+        <p><a href="#2-A" id="resume-2-a">A. Un procédé simplement imitatif ?</a></p>
+        <p><a href="#2-B" id="resume-2-b">B. L’imprévisibilité et la collaboration au service de la création</a></p>
+      </div>
+      <p><a href="#conclusion" id="resume-conclusion">Conclusion</a></p>
+      <p><a href="#bibliographie" id="resume-bibliographie">Bibliographie</a></p>
+      <p><a href="#annexes" id="resume-annexes">Annexes</a></p>
+    </div>
+  </div>
+
+  <div class="resume-reduced">
+    <div class="content">
+      <a href="#introduction" id="resume-introduction-cp" class="label">Introduction</a>
+      <!--
+      <a href="#1-A" id="resume-1-cp" class="label">I.&nbsp;Un&nbsp;simple&nbsp;outil&nbsp;créatif&nbsp;d'ordre&nbsp;mécanique&nbsp;?</a>
+    -->
+      <a href="#1-A" id="resume-1-a-cp" class="label">1.&nbsp;A.&nbsp;Une&nbsp;forme&nbsp;de&nbsp;créativité&nbsp;combinatoire</a>
+      <a href="#1-B" id="resume-1-b-cp" class="label">1.&nbsp;B.&nbsp;Aux&nbsp;limites&nbsp;de&nbsp;la&nbsp;création&nbsp;authentique</a>
+      <!--
+      <a href="#2-A" id="resume-2-cp" class="label">II.&nbsp;Vers&nbsp;une&nbsp;IA&nbsp;véritablement&nbsp;créatrice&nbsp;?</a>
+      -->
+      <a href="#2-A" id="resume-2-a-cp" class="label">2.&nbsp;A.&nbsp;Un&nbsp;procédé&nbsp;simplement&nbsp;imitatif&nbsp;?</a>
+      <a href="#2-B" id="resume-2-b-cp" class="label">2.&nbsp;B.&nbsp;L’imprévisibilité&nbsp;et&nbsp;la&nbsp;collaboration&nbsp;au&nbsp;service&nbsp;de&nbsp;la&nbsp;création</a>
+      <a href="#conclusion" id="resume-conclusion-cp" class="label">Conclusion</a>
+      <a href="#bibliographie" id="resume-bibliographie-cp" class="label">Bibliographie</a>
+      <a href="#annexes" id="resume-annexes-cp" class="label">Annexes</a>
+    </div>
+  </div>
+
+  <div id="introduction">
+  <main class="page-content">
+    <h1 class="title" id="title-introduction">Introduction</h1>
+    <section>
+      <p>
+        À l'heure où l’intelligence artificielle s'inscrit progressivement dans les domaines créatifs et artistiques, longtemps réservés à l’humain, l'émergence des contenus générés artificiellement tend à soulever de nouvelles questions concernant la place de l’Homme et le rapport de la machine à la création artistique.
+      </p>
+    </section>
+    <section>
+      <p>
+        En 2018, le portrait du collectif français Obvious "Edmond de Belamy" (<a href="#fig-6">fig. 6</a>), première peinture générée par IA vendue aux enchères, crée la controverse au sein du monde de l'art¹. Généré automatiquement en se nourrissant des caractéristiques de portraits préexistants, ce tableau interroge alors la critique concernant la légitimité de son statut de création artistique. Ici, la notion de création fait référence à l'agir créateur propre à l'artiste donnant corps à son œuvre par une forme de transcendance énigmatique². De son côté, entraînée à reproduire de manière mimétique, l’IA se profile alors comme un système de raisonnement et de production mécanique aux résultats prévisibles et superficiels³. Associée à tort à l'intelligence humaine, la notion d'IA désigne un domaine de recherche visant à mettre en place des algorithmes capables de traiter des tâches humaines impliquant des processus complexes tels que l’apprentissage ou l’esprit critique, des outils au service de l'humain loin de la complète autonomie⁴.
+      </p>
+      <div class="footer-note">
+        <p>1. Bensamoun, A., "Ceci est… une œuvre d’art ! La question des créations générées par une intelligence artificielle", L'Observatoire n° 55 (2020)</p>
+        <p>2. Alain, "Système des beaux-arts" (1920)</p>
+        <p>3. Zylinska, J., "AI Art: Machine Visions and Warped Dreams" (2020)</p>
+        <p>4. Minsky, M. L., Conférence à Dartmouth (1956)</p>
+      </div>
+    </section>
+    <section>
+      <p>
+        Dans cette perspective, il n’est pas question pour l'intelligence artificielle de véritablement créer, mais de recombiner l’existant, faisant alors preuve d'une forme de créativité par sa capacité à recomposer de manière inédite⁶. Cependant, la réception auprès du public tend à brouiller la frontière entre simple génération algorithmique et œuvre d'art, notamment de par l'émergence récente de nouveaux marchés de l'art concentrés sur l'échange de productions numériques. Ainsi, en quoi l'intelligence artificielle peut-elle faire preuve d'un véritable pouvoir créateur, comparable à celui de l'artiste ?
+      </p>
+      <div class="footer-note">
+        <p>6. Sternberg, R. J., & Lubart, T. I., "Defying the crowd: Cultivating creativity in a culture of conformity" (1995)</p>
+      </div>
+    </section>
+    <section>
+      <p>
+        Au travers de ce mémoire, en nous attachant à établir une distinction entre la créativité et la création artistique, nous questionnerons ainsi dans quelle mesure l’IA pourrait devenir réellement créatrice et se libérer de sa simple condition d’instrument. Au premier abord incompatible avec la notion de création authentique, l'œuvre d’art semblerait alors pouvoir s’affirmer comme le produit de la rencontre entre l’humain et l’intelligence artificielle. Dans un premier temps, nous interrogerons alors le potentiel créatif de la machine en le distinguant de la création artistique, tout d’abord en définissant la créativité dans le contexte de l'IA puis déterminant ses limites face à la véritable création. Par la suite, nous chercherons à déterminer, par l'expérimentation et la recherche, comment l'IA pourrait finalement acquérir un caractère véritablement créateur en mettant en évidence les caractéristiques révélant cette dimension artistique.
+      </p>
+    </section>
+  </main>
+  </div>
+
+  <div id="1-A">
+  <main class="page-content" style="background-color: rgba(82, 42, 34, 0.05);">
+    <h1 class="title">I. Un simple outil créatif d'ordre mécanique ?</h1>
+    <h2 class="title" id="title-1-a">A. Une forme de créativité combinatoire</h2>
+    <section>
+      <p>L'intelligence artificielle est définie pour la première fois par Marvin Lee Minsky en 1956 lors d'une rencontre de scientifiques à Dartmouth aux États-Unis. Face à l'auditoire, il la décrit comme un programme informatique capable de traiter des tâches plus efficacement que les humains "dans la mesure où elles impliquent des processus mentaux de haut niveau comme l'apprentissage perceptuel, l'organisation de la mémoire et l'esprit critique"⁴. Aujourd'hui, le terme "intelligence artificielle" fait référence à un domaine de recherche (<a href="#fig-1">fig. 1</a>) visant à l'automatisation des tâches par l'apprentissage machine, et ce en impliquant des processus mathématiques de haut niveau. Parmi ses champs d'études, les réseaux antagonistes génératifs, ou GAN, (<a href="#fig-2">fig. 2</a>) constituent une famille d'algorithmes caractérisés par leur capacité à répliquer des données similaires mais distinctes en se basant sur un échantillon existant (<a href="#fig-3-4">fig. 3</a>, <a href="#fig-3-4">fig. 4</a>).</p>
+      <div class="footer-note">
+        <p id="fig-1"><img src="img/Frame_39.png" class="zoom" alt=""></p>
+        <p>Fig. 1 : L'intelligence artificielle englobe l'apprentissage machine (machine learning) et l'apprentissage profond (deep learning), technologies au sein desquels s'inscrivent les réseaux de neurones.</p>
+        <p>4. Minsky, M. L., Conférence à Dartmouth (1956)</p>
+      </div>
+    </section>
+    <section style="margin-top: 24px;">
+      <p id="fig-2"><img src="img/Frame_38.png" class="column zoom" alt=""></p>
+      <div class="footer-note">
+        <p>
+          Fig. 2 : Les GANs reposent sur la mise en compétition de deux réseaux neuronaux au sein d’un même programme ; le discriminant, apprenant à reconnaître et à trier les images issues du dataset pour fournir des instructions au générateur, et le générateur, visant à produire une image qui sera reconnue comme authentique par le discriminant.
+        </p>
+        <p><a href="https://www.youtube.com/watch?v=-Upj_VhjTBs" target="_blank">↗ En savoir plus</a></p>
+      </div>
+    </section>
+  </main>
+
+  <main id="fig-3-4" class="page-content" style="background-color: #522a22; color: white;">
+    <h3 class="title">Génération automatique</h3>
+    <section>
+      <img src="img/Frame_43.png" style="pointer-events: none;" alt="">
+    </section>
+    <p class="title" style="margin-top: 48px">Fig. 3 : L’IA génère mécaniquement des visuels basés sur le jeu de données initial. Le résultat est simplement une synthèse des données apprises par le modèle.</p>
+    <section>
+      <p><img src="img/chairs.png" class="column zoom color" alt=""></p>
+      <div class="footer-note">
+        <p>Fig. 4 : Ricardo Cesar Rodrigues, "Chair_GAN" (2021).<br> Modèle permettant de générer de manière reproductive des chaises et assises diverses. Le modèle semble simplement imiter les échantillons fournis en proposant un réassemblage des caractéristiques existantes.</p>
+      </div>
+    </section>
+  </main>
+
+  <main class="page-content" style="background-color: rgba(82, 42, 34, 0.05);">
+    <section>
+      <p>Ainsi, s'inscrivant peu à peu au sein des domaines créatifs, les GANs permettent, dans leur usage commun, de générer automatiquement des visuels à partir d'un jeu d'images du même genre. L’IA semble se positionner ici proche du mode de production industriel décrit par Alain, une machine bien réglée aboutissant à une forme d’œuvre mécanique préméditée dont l'idée précède l’exécution². L'algorithme est alors conçu et maîtrisé par l'Homme pour que les résultats correspondent à sa propre volonté. Dans ce contexte, l'université TU Delft, associée à Microsoft, dirige en 2017 le projet "The Next Rembrandt" (<a href="#fig-5">fig. 5</a>) visant à entraîner une IA dans le but de produire une nouvelle peinture du maître. Pour l'Artiste Joseph Rabie, il ne s'agit alors en aucun cas d'art mais plutôt de science appliquée à haut niveau permettant simplement à un algorithme d'imiter le peintre³ (<a href="#fig-6">fig. 6</a>).</p>
+      <div class="footer-note">
+        <p>2. Alain, "Système des beaux-arts" (1920)</p>
+        <p>3. Zylinska, J., "AI Art: Machine Visions and Warped Dreams" (2020)</p>
+      </div>
+    </section>
+    <section id="fig-5" style="margin-top: 24px;">
+      <p><img src="img/Untitled3.png" class="column zoom color" alt=""></p>
+      <div class="footer-note">
+        <p>Fig. 5 : TU Delf et Microsoft, "The Next Rembrandt" (2017).<br> Cette peinture, intégralement conçue par IA, assume chercher à imiter les portraits du maître. Pour beaucoup, elle est l'expression d'une démonstration technique et scientifique plutôt qu'une véritable création artistique.</p>
+      </div>
+    </section>
+    <section id="fig-6" style="margin-bottom: 24px">
+      <p>
+        <img src="img/Group 23.png" class="column zoom color" alt="">
+      </p>
+      <div class="footer-note">
+        <p>Fig. 6 : Obvious, "Edmond de Belamy" et "Comptesse de Belamy" (2018).<br> Expérimentations du collectif français Obvious s'inscrivant dans une série de portraits générés automatiquement. Première production par IA vendue aux enchères, "Edmond de Belamy" crée la controverse au sein du monde de l'art du fait du caractère imitatif de l'IA, questionnant la légitimité du portrait.</p>
+      </div>
+    </section>
+    <section>
+      <p>D'après Sternberg et Lubart, la créativité se caractérise par la capacité à réaliser une production à la fois "nouvelle" et adaptée au contexte dans lequel elle intervient⁶. Claire-Ange Gintz, de son côté, précise la définition en la décrivant comme la faculté de construire un concept en effectuant la synthèse d'éléments déconstruits⁵. Travaillant à isoler les caractéristiques communes d'un jeu de données pour tenter de les réassembler de manière nouvelle et satisfaisante, l'IA semble alors, malgré un processus purement computationnel, faire preuve d'une forme de créativité combinatoire dans ses résultats. Ainsi, considérée le plus souvent comme un instrument au service de l'Homme, l'IA semble aujourd'hui endosser un rôle d'assistant créatif, fournissant une première base à partir de laquelle l'artiste ou le designer pourra exercer sa pratique (<a href="#fig-7-8">fig. 7</a>, <a href="#fig-7-8">fig. 8</a>). Cette vision purement technique de la machine semble alors s'opposer en tout point avec la véritable création.</p>
+      <div class="footer-note">
+        <p>5. Gintz, C., "Créativité", Les concepts en sciences infirmières (2012)</p>
+        <p>6. Sternberg, R. J., & Lubart, T. I., "Defying the crowd: Cultivating creativity in a culture of conformity" (1995)</p>
+      </div>
+    </section>
+  </main>
+
+  <main id="fig-7-8" class="page-content" style="background-color: #522a22; color: white;">
+    <h3 class="title">Création assistée</h3>
+    <section>
+      <img src="img/Group 19.png" style="pointer-events: none;" alt="">
+    </section>
+    <p class="title" style="margin-top: 48px">Fig. 7 : L’artiste exploite l’IA en comme outil visant à lui fournir une base créative. Vision correspondant à celle de l'IA pour l'humain.</p>
+    <section>
+      <p><img src="img/Group 24.png" class="column zoom color" alt=""></p>
+      <div class="footer-note">
+        <p>Fig. 8 : Obvious, "Udanganyifu" de la série "Facets of AGI" (2020).<br> À gauche, l'image générée par le modèle et à droite la production de l'artiste. Ici, l'IA est exploitée en tant qu'outil, visant à fournir à l'artiste humain une première matière à partir de laquelle créer. Son rôle est limité à celui d'instrument "d'inspiration".</p>
+      </div>
+    </section>
+  </main>
+  </div>
+
+  <div id="1-B">
+  <main class="page-content">
+    <h2 class="title" id="title-1-n">B. Aux limites de la création authentique</h2>
+    <section>
+      <p>
+        La création artistique est décrite par Alain comme un processus plaçant l'artiste au sein d'une forme de transcendance lui permettant de donner corps à son œuvre. À l'opposé de "l’œuvre mécanique" préméditée, l'idée vient à mesure qu'il donne forme à sa création, s'étonnant lui-même de ce qui naît de ses mains. L'inflexibilité matérielle et les autres contraintes de la matière lui offrent alors une liberté réelle et semble donner sens à la création, modelée par les expérimentations et les incertitudes de l'artiste². Cette définition insiste sur le caractère humain du processus, l'Homme semblant entretenir un rapport élémentaire à la création artistique. En effet, selon Sean Dorrance Kelly, la capacité de création authentique est une caractéristique humaine fondamentale déterminée par notre rapport sensible au monde et à notre environnement. La notion de création artistique, liée au sensible et à l'imprévisible, semble alors dépasser les simples compétences mécaniques ou techniques d'une machine⁷.
+      </p>
+      <div class="footer-note">
+        <p>2. Alain, "Système des beaux-arts" (1920)</p>
+        <p>7. Kelly, S. D., "A philosopher argues that an AI can’t be an artist", MIT Technology Review (2019)</p>
+        <!--
+        <h2 style="line-height: 1.3em;"><i>"Par le passé, les êtres humains ont attribué de grands pouvoirs et du génie même à des totems sans vie."⁷</i></h2>
+        -->
+      </div>
+    </section>
+
+    <section>
+      <div class="column quote">
+        <h3><i>"Par le passé, les êtres humains ont attribué de grands pouvoirs et du génie même à des totems sans vie."⁷</i></h3>
+      </div>
+      <div class="footer-note" style="margin-top: 24px;">
+        <p>7. Kelly, S. D., "A philosopher argues that an AI can’t be an artist", MIT Technology Review (2019)</p>
+      </div>
+    </section>
+
+    <!--
+    <section style="margin-bottom: 24px;">
+      <blockquote>
+        "Par le passé, les êtres humains ont attribué de grands pouvoirs et du génie même à des totems sans vie."<br>Kelly, S. D., "A philosopher argues that an AI can’t be an artist", MIT Technology Review (2019)
+      </blockquote>
+    </section>
+    -->
+    <section>
+      <p>La question du rapport de cette dernière à la véritable création est alors en cause. Au-delà de leur dimension mécanique, d'après le philosophe, les machines ne pourrons jamais dépasser les capacités créatrices humaines du fait de leur ancrage social. En considérant la forme de "créativité" des machines comme un substitut à celle de l'homme, elles finiraient inévitablement, selon lui, par nous sembler incompréhensiblement supérieures⁷.</p>
+      <div class="footer-note">
+        <p>7. Kelly, S. D., "A philosopher argues that an AI can’t be an artist", MIT Technology Review (2019)</p>
+      </div>
+    </section>
+  </main>
+
+  <main id="fig-9" class="page-content" style="background-color: rgba(82, 42, 34, 0.05);">
+    <section>
+      <h3 class="title">"Pensez-vous que l'intelligence artificielle est capable de créer de la même manière qu'un humain ?"</h3>
+      <p><img src="img/c1.png" style="pointer-events: none;" class="column" alt=""></p>
+    </section>
+    <section>
+      <h3 class="title">"Pensez-vous que la production d'une intelligence artificielle à la même valeur que celle d'un humain ?"</h3>
+      <p><img src="img/c2.png" style="pointer-events: none;" class="column" alt=""></p>
+    </section>
+    <p class="title" style="margin-top: 48px; margin-bottom: 0;">Fig. 9 : Extrait d'une enquête (cf. annexes) menée auprès d'un échantillon hétérogène de personnes (105 participants) visant à déterminer la vision populaire portée autour de l'IA et de son rapport à l'expression artistique.</p>
+  </main>
+
+  <main class="page-content">
+    <section>
+      <p>D'un point de vue de la réception, les productions réalisées par les machines seules tendent également à être perçues comme moins estimables que les créations humaines (<a href="#fig-9">fig. 9</a>), notamment du fait de leur aspect reproductible. La perception de l'art étant celle de l'Homme, il est apprécié et appréciable subjectivement. En effet, selon Walter Benjamin, la possibilité de reproduire mécaniquement des œuvres d'art a modifié le "pacte originel" sur lequel reposait l'art par la perte de "l'aura", caractère véritable de l’œuvre, et de la sensation d'exclusivité procurée par la création authentique, passant d'artefacts d'admiration inestimables à reproductions bon marché⁸.</p>
+      <div class="footer-note">
+        <p>8. Walter, B., "The Work of Art in the Age of Mechanical Reproduction", (1969)</p>
+      </div>
+    </section>
+    <section>
+      <p>Dans ce contexte, l'IA, simple machine imitative, semble alors en opposition totale avec la notion de création artistique, authentique, propre de l'humain (<a href="#fig-10">fig. 10</a>).</p>
+    </section>
+    <section>
+      <div class="column quote" style="margin-bottom: 0">
+        <h3><i>"La création et la perception de l'art sont objectives sur le plan technique, mais subjectives sur le plan de l'interprétation, de l'intention et du sens. L'IA peut créer un produit final similaire à celui d'un humain, mais avec une absence totale de processus mentaux humains."</i></h3>
+      </div>
+      <div class="footer-note" style="margin-top: 24px;">
+        <p>+ Commentaire anonyme représentatif de l'enquête menée (cf. annexes) témoignant d'une vision distinguant les capacités techniques de l'IA de la "véritable création", humaine.
+      </div>
+    </section>
+  </main>
+
+  <main id="fig-10" class="page-content" style="background-color: #522a22; color: white;">
+    <section>
+      <img src="img/Group 26.png" style="pointer-events: none;" alt="">
+    </section>
+    <p class="title" style="margin-top: 48px; margin-bottom: 0;">Fig. 10 : Distinction entre l'art et la technique selon Flusser¹³, corrélé et contextualisé avec les notions de créativité combinatoire et la création authentique.</p>
+  </main>
+  </div>
+
+  <div id="2-A">
+  <main class="page-content" style="background-color: rgba(82, 42, 34, 0.05);">
+    <h1 class="title">II. Vers une IA véritablement créatrice ?</h1>
+    <h2 class="title" id="title-2-a">A. Un procédé simplement imitatif ?</h2>
+    <section>
+      <p>La question de la place de la machine hante le monde de l'art depuis le début de l'ère industrielle, prenant ses racines à une époque où l'émergence de moyens techniques nouveaux remet en question le travail des humains. Par peur d'être dépassé, la machine est rejetée, perçue parfois comme une concurrente à l'humain menant inévitablement à sa perte. Selon Picabia, à cette époque, l'appareil photo s'oppose alors en tout point au génie artistique de par l'écart de l'artiste vis-à-vis de l'élan créateur original, répliquant simplement la nature.¹⁵ Au milieu des années 50, Jean Tinguely met en place ses premières sculptures mécaniques articulées permettant de produire des peintures abstraites lorsqu'elle est actionnée par l'Homme (<a href="#fig-11">fig. 11</a>). Ces installations invitent alors à questionner la rencontre humain-machine et à reconsidérer son statut, jusqu'alors celui de simple outil.⁹</p>
+      <div class="footer-note">
+        <p id="fig-11"><img src="img/Untitled7.png" class="column zoom color" alt=""></p>
+        <p>Fig. 11 : Jean Tinguely, Méta-matic n° 1 (1959)</p>
+        <p>15. Picabia, F., "How New York Looks to Me", The New York American Magazine (1913)</p>
+        <!--
+        <h2><i>"L'art, l'art, mais qu'est-ce donc que l'art ? Est-ce de reproduire fidèlement un visage ou un paysage ? Non, cela c'est de la mécanique."¹⁵</i></h2>
+        -->
+      </div>
+    </section>
+    <!--
+    <section style="margin-top: 24px; margin-bottom: 24px;">
+      <p><img src="img/Group 34.png" class="column zoom color" alt=""></p>
+      <div class="footer-note">
+        <p>+ Jean Tinguely, Méta-matic n° 1 (1959).<br>Sculpture mécanique destinée à être actionnée par l'humain et permettant alors de produire un dessin original. Le dessin en résultant est alors issu de la rencontre entre la machine et l'humain qui l'actionne.</p>
+      </div>
+    </section>
+    -->
+    <section>
+      <div class="column quote">
+        <h3><i>"Ces dessins Méta-matics varient donc de deux manières différentes : selon la manipulation de la machine par le spectateur-participant et selon les hasards de son fonctionnement même.[...] L'artiste nous montre que l'œuvre d'art peut, en effet, être elle-même créatrice."⁹</i></h3>
+      </div>
+      <div class="footer-note" style="margin-top: 24px;">
+        <p>9. Rolez, A., "La métaphysique dans la sculpture de Jean Tinguely : mécanique, contradiction et métamorphose comme principes générateur" (2015)</p>
+      </div>
+    </section>
+    <section>
+      <p>Ces incertitudes semblent puiser aujourd'hui leur continuité dans le débat qui oppose l'IA à la création artistique. Comme l'appareil photo, l'ordinateur fournit une gamme de moyens reproductifs permettant générer des images multiples¹⁰, dont la qualité peut aujourd'hui tromper les experts. Tandis que Flusser oppose art et technique¹³, l'IA tend à remettre en question cette frontière alors que l'implication de la machine dans l'art semble être aujourd'hui plus dure à déceler (<a href="#fig-12">fig. 12</a>). À l'opposé du mythe de l'artiste, la création humaine se profile peut-être elle aussi comme réassemblage constant de l'existant à la recherche de nouveauté, la création ex nihilo étant réservée à Dieu. Ainsi, le refus des historiens de l'art des productions impliquant l'IA semble reposer sur une idée vieillissante de l'artiste comme "unique lieu de création et de créativité"¹⁰.</p>
+      <div class="footer-note">
+        <p>10. Mazzone, M., & Elgammal, A., "Art, Creativity, and the Potential of Artificial Intelligence" (2019)</p>
+        <p>13. Flusser, V., "Petite philosophie du design" (2002)</p>
+      </div>
+    </section>
+    <section style="margin-bottom: 24px; margin-top: 24px">
+      <p id="fig-12"><img src="img/aican.png" class="column zoom color" alt=""></p>
+      <div class="footer-note">
+        <p>Fig. 12 : Ahmed Elgammal, "AICAN" (2019).<br>Premier réseau de neurones génératif antagoniste ayant passé avec succès le test de Turing. En effet, la majorité des personnes à qui son contenu a été présenté n'ont ainsi pas pu déceler qu'il avait été produit par une IA.</p>
+      </div>
+    </section>
+    <section>
+      <p>Selon Mazzone et Elgammal, la dimension au premier abord simplement imitative de l'IA correspond à une vision restreinte où on ne considère que le résultat sans s'intéresser au processus qui y a abouti. Ce dernier tend alors à compliquer la distinction entre simple imitation et véritable création. Il est, pour eux, évident que les machines ne peuvent pas créer de la même manière qu'un humain car elles ne peuvent pas répliquer son expérience de vie. Néanmoins, même si le processus n'est pas le même que celui de l'artiste, cela ne devrait pas, selon eux, disqualifier les résultats de l'IA du titre de création artistique, émettant alors l'hypothèse que la rencontre entre l'humain et la machine (<a href="#fig-13">fig. 13</a>) permettrais d'aboutir à une mise en commun des capacités, sans que l'IA supplante pour autant l'humain¹⁰.</p>
+      <div class="footer-note">
+        <p>10. Mazzone, M., & Elgammal, A., "Art, Creativity, and the Potential of Artificial Intelligence" (2019)</p>
+      </div>
+    </section>
+    <section style="margin-top: 24px">
+      <p id="fig-13"><img src="img/Group 35.png" class="column zoom color" alt=""></p>
+      <div class="footer-note">
+        <p>Fig. 13 : Gregory Chatonsky, "Ossuaires II" (2018).<br>Au sein de cette série, l'artiste fait émerger des visuels singuliers en intervenant avec un modèle d'IA. Reconnus en tant qu’œuvres, l'implication de l'IA se mêle avec l'expression de l'artiste.</p>
+      </div>
+    </section>
+  </main>
+  </div>
+  
+  <div id="2-B">
+  <main class="page-content">
+    <h2 class="title" id="title-2-b">B. L’imprévisibilité et la collaboration au service de la création</h2>
+    <section>
+      <p>Selon Alain, l'imprévisibilité et la faculté de l'artiste à s'étonner lui-même est l'une des constantes fondamentales de la véritable création. Elle s'explique par la démarche expérimentale menée par l'artiste dont l'idée se forme à mesure qu'il crée². Du côté de la machine, Tinguely interrogeait déjà l'indétermination créatrice et la collaboration humain-machine au sein de ses Méta-matics (<a href="#fig-11">fig. 11</a>) en jouant volontairement des limites mécaniques de ses assemblages⁹. Selon Simondon, c'est justement l'imprécision au cœur de la machine qui lui confère une forme de perfection mécanique¹¹.</p>
+      <div class="footer-note">
+        <p>2. Alain, "Système des beaux-arts" (1920)</p>
+        <p>9. Rolez, A., "La métaphysique dans la sculpture de Jean Tinguely : mécanique, contradiction et métamorphose comme principes générateur" (2015)</p><!--
+        <p>11. Simondon, G., "Du mode d'existence des objets techniques" (1958)</p>
+        -->
+      </div>
+    </section>
+    <section>
+      <div class="column quote">
+        <h3><i>"Le véritable perfectionnement des machines [...] correspond non pas à un accroissement de l'automatisme, mais au contraire au fait que le fonctionnement d'une machine recèle d'une certaine marge d'indétermination."¹¹</i></h3>
+      </div>
+      <div class="footer-note" style="margin-top: 24px;">
+        <p>11. Simondon, G., "Du mode d'existence des objets techniques" (1958)</p>
+      </div>
+    </section>
+    <section>
+      <p>De la même manière, lorsque poussée à ses limites techniques, l'IA tend à produire des résultats surprenants aux déformations inattendues¹⁰. Pour Mazzone et Elgammal, le plus souvent, l'intention de l'artiste demeure absente de ces cas d'échec. Néanmoins, en repensant notre rapport à la machine et en cherchant à dépasser la vision simplement instrumentale de l'IA, l'artiste semble pouvoir lui donner un rôle nouveau au sein de la création artistique. D'après Simondon, l'Homme n'a pas pour rôle d'être le "surveillant d'un groupe d'esclave" mais plutôt celui de chef d'un orchestre qu'il dirige car lui aussi musicien¹¹. Peut-être alors la rencontre entre l'artiste et la machine décrite par Mazzone et Elgammal, caractérisée par l'intervention humaine, permettrai à l'IA de fonctionner de manière irrégulière et ainsi d'acquérir une forme d'indétermination créatrice. L'artiste ne serait plus "assisté" par l'IA mais bien en "partenariat"¹⁰ (<a href="#fig-14-15">fig. 14</a>) avec, aboutissant à une forme de co-création imprévisible (<a href="#fig-14-15">fig. 15</a>). Flusser s'accorde sur cette idée en reconnaissant de nouveaux genres d'actions permises par la machine qu'il considère comme des collaborations¹².</p>
+      <div class="footer-note">
+        <p>10. Mazzone, M., & Elgammal, A., "Art, Creativity, and the Potential of Artificial Intelligence" (2019)</p>
+        <p>11. Simondon, G., "Du mode d'existence des objets techniques" (1958)</p>
+        <p>12. Flusser, V., "Pour une philosophie de la photographie" (2000)</p>
+        <!--
+        <p><img src="img/Frame 61.png" class="zoom" alt=""></p>
+        <p>Fig. 7 : Schéma relationnel questionnant l’interaction entre l'artiste et l'IA.</p>
+        -->
+        <!--
+        <h2><i>"Il s'agit d'un nouveau type de fonction dans laquelle l'être humain [...] et l'appareil fusionnent en une unité."¹²</i></h2>
+        -->
+      </div>
+    </section>
+  </main>
+
+  <main id="fig-14-15" class="page-content" style="background-color: #522a22; color: white;">
+    <h3 class="title">Co-création</h3>
+    <section>
+      <img src="img/Group 18.png" style="pointer-events: none;" alt="">
+    </section>
+    <p class="title" style="margin-top: 48px">Fig. 14 : Diagramme basé sur les schémas de A. Elgammal. L’artiste, intervenant à plusieurs niveaux du processus, agit en collaboration avec l’IA, dépassant sa simple instrumentalisation. Le résultat est alors le produit de la rencontre entre l'humain et la machine. Vision de l'IA avec l'humain.</p>
+    <!--
+    <section>
+      <p><img src="img/Group 33.png" style="pointer-events: none;" class="column" alt=""></p>
+      <div class="footer-note">
+        <p>Fig. 8 : Schéma relationnel questionnant l’interaction entre l'artiste et l'IA.</p>
+      </div>
+      -->
+      <!--
+      <p><img src="img/Group 45.png" style="pointer-events: none;" class="column" alt=""></p>
+      <div class="footer-note">
+        <p>1. Intervention sur les données d’entrée<br>2. Intervention sur les paramètres de génération<br>3. Intervention sur les données de sortie
+          </ol>
+          </p>
+      </div>
+    </section>
+    -->
+    <section>
+      <p><img src="img/test_extrait.png" class="column color zoom" alt=""></p>
+      <div class="footer-note">
+        <p>Fig. 15 : Expérimentation (cf. annexes) visant à mettre en évidence différents degrés d'indétermination par l'intervention humaine (de gauche à droite). Bien qu'au début simplement imitatif, le modèle d'IA tend à gagner en imprévisibilité plus l'implication humaine s'intensifie.</p>
+      </div>
+    </section>
+   
+  </main>
+
+  <!--
+  <main class="page-content" style="background-color: rgba(82, 42, 34, 0.05);">
+    <section>
+      <img src="img/expe.png" class="color zoom" alt="">
+    </section>
+    <p class="title" style="margin-top: 48px; margin-bottom: 0;">+ Expérimentation (cf. annexes) visant à mettre en évidence différents degrés d'indétermination par l'intervention humaine. Bien qu'au début simplement imitative, en jouant avec les données et leur traitement, l'IA tend à gagner en imprévisibilité dans les résultats, produits de la rencontre entre l'Homme et la machine.</p>
+  </main>
+  -->
+
+  <main class="page-content">
+    <!--
+    <section style="margin-bottom: 24px; margin-top: 24px">
+      <p><img src="img/expe.png" class="column zoom color" alt=""></p>
+      <div class="footer-note">
+        <p>+ Expérimentation (cf. annexes) visant à mettre en évidence différents degrés d'indétermination par l'intervention humaine. Bien qu'au début simplement imitative, en jouant avec les données et leur traitement, l'IA tend à gagner en imprévisibilité dans les résultats, produits de la rencontre entre l'Homme et la machine.</p>
+      </div>
+    </section>
+    -->
+    <section>
+      <p>En s'associant, les humains et les IA mettent en commun leurs capacités au service du processus de création pour permettre d'explorer des nouveaux possibles¹⁰. Selon Zylinska, il n'est pas question d'obtenir de l'aide mais bien de dépasser la notion humaine de création³. Ainsi, des artistes tels que Sougwen Chung exploitent l'indétermination de l'IA dans leur travail plastique. En faisant intervenir des IA au sein de dessins collaboratifs, elle la place sur un pied d'égalité avec l'humain, les deux parties agissantes dans un échange perpétuel (<a href="#fig-17">fig. 17</a>) et donnant corps à des peintures surprenantes (<a href="#fig-16">fig. 16</a>).</p>
+      <div class="footer-note">
+        <p>10. Mazzone, M., & Elgammal, A., "Art, Creativity, and the Potential of Artificial Intelligence" (2019)</p>
+        <p>3. Zylinska, J., "AI Art: Machine Visions and Warped Dreams" (2020)</p>
+      </div>
+    </section>
+    <section id="fig-16" style="margin-top: 24px">
+      <p><img src="img/va1.png" class="column zoom color" alt=""></p>
+      <div class="footer-note">
+        <p><img src="img/va2.png" class="column zoom color" alt=""></p>
+        <p>Fig. 16 : Sougwen Chung, "Omnia per Omnia" (2019).<br>Performance où l'humain et la machine agissent dans une dynamique collaborative créatrice.</p>
+      </div>
+    </section>
+  </main>
+
+  <main id="fig-17" class="page-content" style="background-color: rgba(82, 42, 34, 0.05);">
+    <section>
+      <img src="img/Group 46.png" style="pointer-events: none;" alt="">
+    </section>
+    <p class="title" style="margin-top: 48px; margin-bottom: 0;">Fig. 17 : Schéma relationnel questionnant l’interaction entre l'artiste et l'IA.</p>
+  </main>
+
+  <main class="page-content">
+    <section>
+      <p>D'après Roger Caillois, l'artiste ne fait que "suivre un instinct ou que laisser agir des forces qu'il ne contrôle pas". Ici, l'Homme ne maîtrise pas tous les tenant de l'IA et lui prodigue alors une forme de liberté au sein du processus de création¹⁴ (<a href="#fig-14-15">fig. 15</a>, <a href="#fig-18">fig. 18</a>). Ainsi, en collaborant avec l'Homme, l'IA semble peu à peu se libérer de son simple rôle d'outil pour endosser celui de médium¹⁰ voire d'artiste, faisant alors peut-être preuve d'un véritable pouvoir créateur de par l'imprévisibilité des productions et l'indétermination du processus provoquée par l'intervention humaine.</p>
+      <div class="footer-note">
+        <p>10. Mazzone, M., & Elgammal, A., "Art, Creativity, and the Potential of Artificial Intelligence" (2019)</p>
+        <p>14. Caillois, R., "Esthétique généralisée" (1962)</p>
+      </div>
+    </section>
+    <section id="fig-18" style="margin-top: 24px">
+      <p><img src="img/Group 36.png" class="column zoom color" alt=""></p>
+      <div class="footer-note">
+        <p>Fig. 18 : Mario Klingemann, "Superficial Beauty" (2017).<br>L'artiste permet ici à l'IA de fonctionner de manière irrégulière en intervenant directement sur son processus génératif. Les visuels imprévisibles se profilent alors comme la synthèse de la rencontre entre l'humain et la machine, mêlant indistinctement le caractère créatif de l'IA et la sensibilité humaine de l'artiste.</p>
+      </div>
+    </section>
+  </main>
+  </div>
+
+  <main class="page-content" style="background-color: #522a22; color: white;">
+    <h2 class="title" style="line-height: 1.5em; margin-bottom: 0;">"Le meilleur résultat que nous puissions imaginer est un partenariat fructueux entre un artiste et un système d'IA créatif."</h2>
+    <p class="title" style="margin-top: 48px; margin-bottom: 0;">Mazzone et Elgammal, "Art, Creativity, and the Potential of Artificial Intelligence", 2019</p>
+  </main>
+
+  <div id="conclusion">
+  <main class="page-content" style="background-color: rgba(82, 42, 34, 0.05);">
+    <h1 class="title">Conclusion</h1>
+    <div class="title">
+      <p>
+        Vectrice d'incertitudes, l'IA tend aujourd'hui requestionner la place de l'humain et de la machine dans les domaines créatifs en y bousculant notre perception. Au premier abord de nature purement mécanique et imitative, elle semble premièrement incompatible avec la véritable création, depuis toujours réservée à l'humain et empreinte d'une dimension mystique inexplicable. Ce nouveau moyen de reproduction, réassemblant l'existant, semble alors faire preuve d'une forme de créativité combinatoire dans les résultats, fournissant alors une première matière à l'artiste.
+      </p>
+      <p>
+        Néanmoins, en reconsidérant notre vision instrumentale de la machine, l'IA semble pouvoir adopter un rôle nouveau au sein du processus créateur. Cette approche tend à interroger notre rapport à la technologie, jusqu'à présent celui de l'asservissement. En collaborant avec la machine, l'humain semble pouvoir insuffler à l'IA, par son intervention, une nouvelle forme d'indétermination créatrice au sein du processus, auparavant d'une prévisibilité mécanique. Le résultat est alors celui d'une co-création humain-IA, réconciliant peut-être l'artiste et la machine. Ainsi, les deux parties mettent en commun leurs capacités initialement opposées au service de la création artistique.</p>
+      <p>
+        L’IA semble renverser notre approche de la création et nous permet d’envisager de nouveaux possibles. En confrontant la véritable création, elle interroge la nature même de l'art et de ce qui fait de nous des êtres humains. Peut-être permettrait-elle alors à l’Homme, en agissant à ses côtés, de se préserver des comportements computationnels et de renouveler sa pratique créative. Nous pourrions alors imaginer son futur concret dans le monde design au sein duquel nous évoluerions main dans la main avec l'IA, peut-être même un nouveau métier consacré à la médiation entre les l'Homme et la machine, permettant d'envisager des perspectives créatrices nouvelles.
+      </p>
+    </div>
+  </main>
+  </div>
+
+  <div id="bibliographie">
+  <main class="page-content" style="background-color: #522a22; color: white">
+    <h1 class="title">Bibliographie</h1>
+    <section>
+      <ol>
+        <li>Bensamoun, A., "Ceci est… une œuvre d’art ! La question des créations générées par une intelligence artificielle", L'Observatoire n° 55 (2020)</li>
+        <li>Alain, "Système des beaux-arts" (1920)</li>
+        <li>Zylinska, J., "AI Art: Machine Visions and Warped Dreams" (2020)</li>
+        <li>Minsky, M. L., Conférence à Dartmouth (1956)</li>
+        <li>Gintz, C., "Créativité", Les concepts en sciences infirmières (2012)</li>
+        <li>Sternberg, R. J., & Lubart, T. I., "Defying the crowd: Cultivating creativity in a culture of conformity" (1995)</li>
+        <li>Kelly, S. D., "A philosopher argues that an AI can’t be an artist", MIT Technology Review (2019)</li>
+        <li>Walter, B., "The Work of Art in the Age of Mechanical Reproduction", (1969)</li>
+        <li>Rolez, A., "La métaphysique dans la sculpture de Jean Tinguely : mécanique, contradiction et métamorphose comme principes générateur" (2015)</li>
+        <li>Mazzone, M., & Elgammal, A., "Art, Creativity, and the Potential of Artificial Intelligence" (2019)</li>
+        <li>Simondon, G., "Du mode d'existence des objets techniques" (1958)</li>
+        <li>Flusser, V., "Pour une philosophie de la photographie" (2000)</li>
+        <li>Flusser, V., "Petite philosophie du design" (2002)</li>
+        <li>Caillois, R., "Esthétique généralisée" (1962)</li>
+        <li>Picabia, F., "How New York Looks to Me", The New York American Magazine (1913)</li>
+      </ol>
+    </section>
+  </main>
+  </div>
+
+  <div id="annexes">
+  <main class="page-content" style="background-color: #522a22; color: white; border-top: 2px solid white;">
+    <h1 class="title">Annexes</h1>
+    <section>
+      <ul>
+        <li><a href="annexes/enquete-lia-dans-le-contexte-de-la-creation-artistique.html" style="color: white; border-color: white;">Enquête : L'IA dans le contexte de la création artistique</a></li>
+        <li><a href="annexes/experimentation-lintervention-humaine-au-sein-du-processus-generateur-de-lia.html" style="color: white; border-color: white;">Expérimentation : L'intervention humaine au sein du processus générateur de l'IA</a></li>
+        <!--
+        <li><a href="annexes/dossier-complementaire-les-creations-marquantes-donnant-place-a-lia.html" style="color: white; border-color: white;">Dossier complémentaire : Les créations marquantes donnant place à l'IA</a></li>
+        -->
+      </ul>
+    </section>
+  </main>
+  </div>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/zooming.min.js"></script>
+<!--<script src="https://cdnjs.deepai.org/deepai.min.js"></script>-->
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

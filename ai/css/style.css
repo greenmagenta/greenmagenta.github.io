@@ -1,0 +1,408 @@
+*::-moz-selection {
+	background: rgba(255, 69, 0, 0.1) scroll 0 0;
+	color: orangered;
+}
+
+::selection {
+	background: rgba(255, 69, 0, 0.1) none repeat scroll 0 0;
+	color: orangered;
+}
+
+html {
+	scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    background-color: white/*#fff5e9*/;
+    color: #522a22;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Shippori Antique', sans-serif;
+    line-height: 1.2em;
+    margin-bottom: 32px;
+}
+
+i {
+    font-style: italic;
+}
+
+img {
+    width: 100%;
+}
+
+img.color {
+    filter: grayscale(1);
+}
+
+img.color:hover {
+    filter: none;
+}
+
+img.zoom {
+    transition: 0.3s;
+}
+img.zoom:hover {
+    /*opacity: 0.75;*/
+}
+
+a {
+    /*text-decoration: underline;*/
+    text-decoration: none;
+    border-bottom: 2px solid #522a22;
+    color: #522a22;
+    transition: 0.3s;
+    /*color: orangered;*/
+}
+
+a:hover {
+    opacity: 0.75;
+}
+
+/*
+canvas {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+    left: 0;
+    right: 0;
+}*/
+
+.page-content {
+    font-size: 15px;
+    line-height: 1.5em;
+    margin: 64px auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 64px 0;
+}
+
+.title {
+    max-width: calc(800px);
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+
+.cover {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #522a22;
+    top: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 8px 48px;
+}
+
+.cover .top-content {
+    color: none;
+    display: flex;
+    grid-gap: 8px;
+    flex-direction: row;
+    color: white;
+    -webkit-text-stroke: 6px /*#351b16*/ /*orangered*/ white;
+    z-index: 2;
+}
+
+.cover .top-content h1 {
+    font-size: 64px;
+}
+
+.cover .bottom-content {
+    color: white;
+    z-index: 50;
+}
+
+.cover .bottom-note {
+    position: absolute;
+    bottom: 32px;
+    left: 48px;
+    width: 384px;
+    height: auto;
+    color: white;
+}
+
+.cover .bottom-note p {
+    font-size: 12px;
+    line-height: 1.4em;
+}
+
+.cover .top-actions {
+    position: absolute;
+    top: 32px;
+    right: 48px;
+    display: flex;
+    flex-direction: row;
+    grid-gap: 16px;
+}
+
+.cover .top-actions a {
+    color: white;
+    border-color: white;
+}
+
+.resume-reduced {
+    display: none;
+    position: sticky; top: 0;
+    width: 100%;
+    background-color: white/*#fff5e9*/;
+    border-bottom: 2px solid #522a22;
+    z-index: 9999;
+}
+
+.resume-reduced .content {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 16px;
+    padding: 16px 48px;
+    overflow-x: auto;
+}
+
+.resume {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+}
+
+.resume .content {
+    position: absolute;
+    height: auto;
+    width: 350px;
+    /*background-color: #fff5e9;*/
+    margin: 0 0;
+    top: 0;
+    padding: 48px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.resume .content:hover {
+    background-color: white/*#fff5e9*/;
+}
+
+.resume .content a {
+    color: rgba(82, 42, 34, 0.5);
+    text-decoration: none;
+    border: none;
+}
+
+.resume .content a:active {
+    color: #522a22;
+}
+
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    grid-gap: 48px;
+}
+
+section p,
+section .column/*,
+section blockquote*/ {
+    flex: 1 0 500px;
+    margin-top: 0;
+    max-width: calc(800px - 220px - 48px);
+}
+
+.quote {
+    background-color: rgba(82, 42, 34, 0.05);
+    padding: 24px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*margin-bottom: 0;*/
+    margin-top: 24px !important;
+    margin-bottom: 48px;
+}
+
+.quote h3, .quote h2, .quote h1 {
+    margin: 0;
+    line-height: 1.4em;
+}
+
+.quote p {
+    margin-bottom: 0;
+}
+
+
+.footer-note {
+    font-size: 12px;
+    line-height: 1.4em;
+    width: 220px;
+}
+
+.footer-note img {
+    width: 100%;
+}
+
+.label {
+    padding: 8px 14px;
+    border: 2px solid #522a22;
+    border-radius: 32px;
+}
+
+.rotate-1,
+.rotate-2,
+.rotate-3 {
+    display: inline-block;
+    transition: 0.3s;
+    /*cursor: crosshair;*/
+}
+
+.rotate-1 {
+    transform: rotate(10deg);
+}/*
+.rotate-1:hover {
+    transform: rotate(14deg);
+}*/
+
+.rotate-2 {
+    transform: rotate(-5deg);
+}/*
+.rotate-2:hover {
+    transform: rotate(-9deg);
+}*/
+
+.rotate-3 {
+    transform: rotate(-15deg);
+}/*
+.rotate-3:hover {
+    transform: rotate(-19deg);
+}*/
+
+
+.page-content.nav {
+    position: fixed;
+    top: 0;
+    background-color: #522a22;
+    width: 100%; 
+    color: white;
+    /*border-bottom: 2px solid white;*/
+    padding: 32px 0;
+    z-index: 9999;
+    transform: translateY(-100px);
+    transition: 0.3s;
+    line-break: auto;
+}
+
+.nav.is-displayed {
+    transform: translateY(0);
+}
+
+#alt-action {
+    display: none;
+}
+
+@media screen and (max-width: 1550px) and (min-width: 1250px){
+
+    .page-content {
+        padding-left: 256px;
+        padding-right: 0;
+    }
+
+    .resume .content {
+        width: 320px;
+    }
+
+    section {
+        max-width: 750px;
+    }
+
+    section p,
+    section .quote,
+    section img.column {
+        flex: 1 0 750px;
+        max-width: calc(750px - 220px - 48px);
+    }
+
+    .title {
+        max-width: calc(750px);
+    }
+}
+
+@media screen and (max-width: 1250px){
+    .resume {
+        display: none;
+    }
+
+    .resume-reduced {
+        display: block;
+    }
+
+    /*
+    .cover .top-actions {
+        display: none;
+    }*/
+}
+
+@media screen and (max-width: 870px){
+    section {
+        flex-direction: column;
+        grid-gap: 0;
+        margin: 0 32px;
+    }
+
+    .title {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+    .color {
+        filter: none !important;
+    }
+
+    section p, section .column {
+        flex: 1 0;
+    }
+
+    .footer-note {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .footer-note p img {
+        margin-top: 16px;
+    }
+
+    .quote {
+        margin-bottom: 0;
+    }
+
+    .cover .bottom-note {
+        width: auto;
+        right: 48px;
+    }
+
+    .cover .top-content {
+        display: none;
+    }
+
+    .cover {
+        padding-top: 24px;
+    }
+
+    .page-content.nav {
+        padding: 32px 32px;
+    }
+
+    .cover .top-actions {
+        display: none;
+    }
+
+    #alt-action {
+        display: inline;
+    }
+}

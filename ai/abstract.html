@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Pour une IA créatrice : L'IA dans le contexte de la création artistique</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique&family=Work+Sans:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    @media screen and (max-width: 1550px) and (min-width: 1250px){
+      .page-content {
+          padding-left: 0 !important;
+          padding-right: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="page-content nav">
+    <h3 class="title" style="margin: 0 auto">For a creating AI: AI in the context of artistic creation</h3>
+  </main>
+
+  <main class="page-content" style="background-color: #522a22; color: white; border-bottom: 2px solid white; padding: 32px;">
+    <p class="title" style="margin: 0 auto"><a href="index.html" style="color: white; border-color: white;">Accueil</a> · Abstract</p>
+  </main>
+  <main class="page-content annexe-title" style="background-color: #522a22; color: white;">
+    <h1 class="title">For a creating AI: AI in the context of artistic creation</h1>
+  </main>
+
+  <div>
+    <main class="page-content">
+      <h1 class="title">Abstract</h1>
+      <div class="title">
+        <p>
+            Today, new questions are raised concerning the emergence of artificially generated content within the creative fields and the relationship between the machine and artistic creation. Wrongly associated with human intelligence, the notion of AI designates a field of research aiming at setting up algorithms capable of handling human tasks involving complex processes such as learning or critical thinking¹. Thus, in what way can artificial intelligence demonstrate a real creating power, comparable to that of the artist?
+        </p>
+        <p>
+            While the notion of true creation seems to refer to the creating action of the artist himself, giving shape to his unexpected work through a form of enigmatic transcendence², AI GANs (Generative Adversarial Network), trained to reproduce in a mimetic way, is then profiled as a mechanical reasoning and production system with predictable and superficial results³. In this perspective, artificial intelligence seems to be able at first sight to show only a form of creativity by its capacity to recompose deconstructed elements⁴ in an innovative way adapted to the context⁵. Because of its mechanical dimension, AI, a priori a simple imitative machine, seems to be opposed in every way with the authentic creation, proper to the human.
+        </p>
+        <p>
+            Nevertheless, by freeing ourselves from the instrumental vision of AI, we can begin to consider a new relationship between it and artistic creation. According to Simondon, the real improvement of machines would correspond to the fact that their operation conceals “a certain margin of indeterminacy”⁶. The human intervention could then allow the AI to operate irregularly and thus demonstrate unexpected and unpredictable results, typical of true creation. The meeting between humans and AI could take the form of a partnership where the machine would no longer be considered as a simple tool but as a partner in a process where both would pool their respective abilities in the service of creation⁷.
+        </p>
+        <p>
+            At first sight incompatible with the notion of authentic creation, the work of art would then seem to be able to affirm itself as the result of the collaboration between human and AI, the latter acquiring perhaps then a form of creating power by its unpredictability.
+        </p>
+      </div>
+    </main>
+    </div>
+  
+    <div>
+    <main class="page-content" style="background-color: #522a22; color: white; border-bottom: 2px solid white; padding: 32px;">
+      <h1 class="title">Bibliography</h1>
+      <section>
+        <ol>
+            <li>Minsky, M. L., Conférence à Dartmouth (1956)</li>
+            <li>Alain, "Système des beaux-arts" (1920)</li>
+            <li>Kelly, S. D., "A philosopher argues that an AI can’t be an artist", MIT Technology Review (2019)</li>
+            <li>Gintz, C., "Créativité", Les concepts en sciences infirmières (2012)</li>
+            <li>Sternberg, R. J., & Lubart, T. I., "Defying the crowd: Cultivating creativity in a culture of conformity" (1995)</li>
+            <li>Simondon, G., "Du mode d'existence des objets techniques" (1958)</li>
+            <li>Mazzone, M., & Elgammal, A., "Art, Creativity, and the Potential of Artificial Intelligence" (2019)</li>
+        </ol>
+      </section>
+    </main>
+    </div>
+
+    <main class="page-content" style="background-color: #522a22; color: white;">
+    <section>
+        <ul>
+        <li><a href="index.html" style="color: white; border-color: white;">Retour à l'accueil</a></li>
+        </ul>
+    </section>
+    </main>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/zooming.min.js"></script>
+<!--<script type="text/javascript" src="js/script.js"></script>-->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+	new Zooming({
+		// options...
+	}).listen('img.zoom')
+})
+
+var annexe_title = document.getElementsByClassName("annexe-title")[0]
+var annexe_nav = document.getElementsByClassName("nav")[0]
+
+window.onscroll = function() {
+  if (annexe_title !== null) {
+      if(checkVisible(annexe_title)){
+        annexe_nav.classList.remove("is-displayed");
+      } else {
+        annexe_nav.classList.add("is-displayed");
+      }
+    }
+}
+function checkVisible(elm) {
+	var rect = elm.getBoundingClientRect();
+	var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+	return !(rect.bottom < 0 || rect.top - viewHeight >= -5);
+}
+</script>
+</body>
+</html>
